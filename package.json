@@ -1,0 +1,9 @@
+{ "name" : "node-hl1606"
+, "description" : ""
+, "author" : "Conner Petzold <cpetzold@gmail.com>"
+, "version" : "0.0.1"
+, "main" : "./lib/hl1606"
+, "dependencies" : {
+    "node-serialport": ">= 0.1.3"
+  }
+}
