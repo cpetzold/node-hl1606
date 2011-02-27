@@ -5,8 +5,8 @@ var strip = HL1606.connect('/dev/ttyACM0', 115200);
 function nextColor(c) {
   switch (c) {
     case strip.Command | strip.RedOn: return strip.Command | strip.GreenOn;
-    case strip.Command | strip.GreenOn: return strip.Command | strip.GreenOn;
-    case strip.Command | strip.BlueOn: return strip.Command | strip.GreenOn;
+    case strip.Command | strip.GreenOn: return strip.Command | strip.BlueOn;
+    case strip.Command | strip.BlueOn: return strip.Command | strip.RedOn;
     default: return strip.Command | strip.RedOn;
   }
 }
